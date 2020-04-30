@@ -4,11 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Finder</title>
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="/app.581aa3f0.css"></head>
 <body>
-    
-    <h1>Hello World</h1>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <a class="navbar-brand" href="#">GitHub Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+       
+        
+      </nav>
+    
+    <!-- User search section -->
+    <section class="search container">
+        <div class="jumbotron">
+            <h1>Welcome to GitHub finder</h1>
+            <p>Search for a user in the box below</p>
+
+            <div class="card search__card">
+                <form class="search__form form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control search__form--search-box" placeholder="Enter user name">
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="submit" class="form-control search__form--search-btn" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- User profile section -->
+    <section class="profile container">
+        <div class="card profile__card">
+            <h2>Username</h2>
+            <div class="profile__content">
+                <div class="profile__content--pic">
+                    <img class="profile__content--pic-img" src="https://images.unsplash.com/photo-1585923491671-0ced430efe9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+                    <a href="" class="btn btn-lg btn-warning profile__content--btn">View Profile</a>
+                </div>
+
+                <div class="profile__content--info">
+                    <span class="display-btn display-btn--1">Public Repos: 42</span>
+                    <span class="display-btn display-btn--2">Public Gists: 128</span>
+                    <span class="display-btn display-btn--3">Public Followers: 403</span>
+                    <span class="display-btn display-btn--4">Public Public Following: 116</span>
+
+                    <p class="profile__content--company">Company: <span id="company">@winstrike</span></p>
+                    <p class="profile__content--web">Website/Blog: <span id="web">http://shuvalov.info</span></p>
+                    <p class="profile__content--location">Location: <span id="location">Ho Chi Minh, Vietnam</span></p>
+                    <p class="profile__content--company">Member Since: <span id="member">2012-02-05</span></p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Latest Repos</h2>
+        <div class="repo">
+            <div class="repo__title">
+                <p>parcel-plugin-peer-depend</p>
+            </div>
+            <div class="repo__display">
+                <span class="display-btn display-btn--2">Stars: 1</span>
+                <span class="display-btn display-btn--3">Watchers: 1</span>
+                <span class="display-btn display-btn--4">Forks: 1</span>
+            </div>
+        </div>
+
+        <div class="repo">
+            <div class="repo__title">
+                <p>parcel-plugin-peer-depend</p>
+            </div>
+            <div class="repo__display">
+                <span class="display-btn display-btn--2">Stars: 1</span>
+                <span class="display-btn display-btn--3">Watchers: 1</span>
+                <span class="display-btn display-btn--4">Forks: 1</span>
+            </div>
+        </div>
+
+        <div class="repo">
+            <div class="repo__title">
+                <p>parcel-plugin-peer-depend</p>
+            </div>
+            <div class="repo__display">
+                <span class="display-btn display-btn--2">Stars: 1</span>
+                <span class="display-btn display-btn--3">Watchers: 1</span>
+                <span class="display-btn display-btn--4">Forks: 1</span>
+            </div>
+        </div>
+
+        <div class="repo">
+            <div class="repo__title">
+                <p>parcel-plugin-peer-depend</p>
+            </div>
+            <div class="repo__display">
+                <span class="display-btn display-btn--2">Stars: 1</span>
+                <span class="display-btn display-btn--3">Watchers: 1</span>
+                <span class="display-btn display-btn--4">Forks: 1</span>
+            </div>
+        </div>
+
+        <div class="repo">
+            <div class="repo__title">
+                <p>parcel-plugin-peer-depend</p>
+            </div>
+            <div class="repo__display">
+                <span class="display-btn display-btn--2">Stars: 1</span>
+                <span class="display-btn display-btn--3">Watchers: 1</span>
+                <span class="display-btn display-btn--4">Forks: 1</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/app.581aa3f0.js"></script>
 </body>
 </html>

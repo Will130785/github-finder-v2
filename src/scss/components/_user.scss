@@ -1,0 +1,69 @@
+.profile {
+
+    &__card {
+        background-color: #000;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+
+        &--pic {
+            grid-column: 1 / 1;
+
+        &-img {
+            width: 100%;
+            max-height: 30rem;
+        }
+
+        }
+
+        &--btn {
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        &--info {
+            grid-column: 2 / -1;
+
+
+            p {
+                font-size: 1.4rem;
+                text-align: center;
+                border: 1px solid #fff;
+                margin: 0;
+                padding: 1rem;
+            }
+
+        }
+
+    }
+}
+
+.display-btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 1rem;
+
+    &--1 {
+        background-color: greenyellow;
+    }
+
+    &--2 {
+        background-color: green;
+    }
+
+    &--3 {
+        background-color: blue;
+    }
+
+    &--4 {
+        background-color: lightblue;
+    }
+}
