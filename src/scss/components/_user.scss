@@ -12,7 +12,12 @@
         grid-gap: 1rem;
 
         &--pic {
-            grid-column: 1 / 1;
+            grid-column: 1 / 2;
+
+            //Set to take up entire screen width on mobile devices
+            @media only screen and (max-width: 500px) {
+                grid-column: 1 / -1;
+            }
 
         &-img {
             width: 100%;
@@ -28,6 +33,12 @@
 
         &--info {
             grid-column: 2 / -1;
+
+            //Set to take up entire screen width on mobile devices
+            @media only screen and (max-width: 500px) {
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+            }
 
 
             p {
@@ -52,18 +63,18 @@
     margin: 1rem;
 
     &--1 {
-        background-color: greenyellow;
+        background-color: rgb(122, 202, 3);
     }
 
     &--2 {
-        background-color: green;
+        background-color: rgb(0, 110, 0);
     }
 
     &--3 {
-        background-color: blue;
+        background-color: rgb(18, 18, 211);
     }
 
     &--4 {
-        background-color: lightblue;
+        background-color: rgb(94, 187, 218);
     }
 }

@@ -7,6 +7,16 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
   background-color: #000;
@@ -33,15 +43,28 @@ body {
 }
 .repo p {
   font-size: 1.4rem;
+  padding: 1rem;
 }
 
 .search {
   margin-bottom: 2rem;
 }
+.search h1 {
+  font-size: 4rem;
+}
+.search p {
+  font-size: 1.6rem;
+}
 .search__card {
   background-color: #000;
   color: #fff;
+  border: none;
 }
+.search__form--search-box {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
 .jumbotron {
   background-color: #000;
   color: #fff;
@@ -59,7 +82,12 @@ body {
   grid-gap: 1rem;
 }
 .profile__content--pic {
-  grid-column: 1/1;
+  grid-column: 1/2;
+}
+@media only screen and (max-width: 500px) {
+  .profile__content--pic {
+    grid-column: 1/-1;
+  }
 }
 .profile__content--pic-img {
   width: 100%;
@@ -71,6 +99,12 @@ body {
 }
 .profile__content--info {
   grid-column: 2/-1;
+}
+@media only screen and (max-width: 500px) {
+  .profile__content--info {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
 }
 .profile__content--info p {
   font-size: 1.4rem;
@@ -89,16 +123,16 @@ body {
   margin: 1rem;
 }
 .display-btn--1 {
-  background-color: greenyellow;
+  background-color: #7aca03;
 }
 .display-btn--2 {
-  background-color: green;
+  background-color: #006e00;
 }
 .display-btn--3 {
-  background-color: blue;
+  background-color: #1212d3;
 }
 .display-btn--4 {
-  background-color: lightblue;
+  background-color: #5ebbda;
 }
 
 /*# sourceMappingURL=/app.581aa3f0.css.map */
